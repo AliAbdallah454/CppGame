@@ -3,9 +3,7 @@
 
 using std::string;
 
-Stinger::Stinger(string name, double damage){
-    setName("Stinger");
-    setDamage(damage);
+Stinger::Stinger(){
 }
 
 Stinger::~Stinger(){
