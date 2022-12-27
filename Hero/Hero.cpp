@@ -4,6 +4,8 @@ Hero::Hero(){
 
 }
 
+//setters
+
 void Hero::setName(string name){
     this->name = name;
 }
@@ -16,6 +18,12 @@ void Hero::setHealth(double health){
 void Hero::setMana(double mana){
     this->mana = mana;
 }
+void Hero::setResistance(double resistance){
+    this->resistance = resistance;
+}
+
+
+//getters
 
 string Hero::getName(){
     return this->name;
@@ -28,6 +36,9 @@ double Hero::getHealth(){
 }
 double Hero::getMana(){
     return this->mana;
+}
+double Hero::getResistance(){
+    return this->resistance;
 }
 
 Hero::~Hero(){
