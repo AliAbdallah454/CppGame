@@ -5,7 +5,7 @@
 
 #pragma once
 
-class Stinger : Hero{
+class Stinger : public Hero{
 public:
 
     Stinger();

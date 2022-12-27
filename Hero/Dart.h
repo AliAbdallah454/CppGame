@@ -7,7 +7,7 @@
 
 #pragma once
 
-class Dart : Hero{
+class Dart : public Hero{
 public:
 
     Dart();

@@ -17,7 +17,6 @@ public:
     void setMana(double mana);
     void setResistance(double resistance);
     
-
     string getName();
     double getDamage();
     double getHealth();

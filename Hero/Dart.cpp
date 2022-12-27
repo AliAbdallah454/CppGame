@@ -30,6 +30,7 @@ void Dart::takeDamage(Hero enemy){
     if(getMana() >= Dart::takeDamageManaCost){
         Dart::decreaseHealth(takeDamageHealthCost * getHealth());
         Dart::setDamage(0.65 * enemy.getDamage());
+        enemy.setDamage(enemy.getDamage() - 0.65 * enemy.getDamage());
         Dart::decreaseMana(takeDamageManaCost);
     }
     else{

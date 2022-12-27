@@ -1,4 +1,5 @@
 #include "Hero.h"
+#include <iostream>
 
 Hero::Hero(){
 
@@ -21,7 +22,6 @@ void Hero::setMana(double mana){
 void Hero::setResistance(double resistance){
     this->resistance = resistance;
 }
-
 
 //getters
 

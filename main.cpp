@@ -43,13 +43,14 @@ bool isValidChoise(int choice){
     }
     return true;
 }
-Hero chooseHero(int playerNumber){
+
+string chooseHero(){
 
     int choice = 0;
 
     while(true){
 
-        cout << "1) Stringer" << endl;
+        cout << "1) Stinger" << endl;
         cout << "2) Dart" << endl;
         cout << ">> ";
         cin >> choice;
@@ -68,23 +69,28 @@ Hero chooseHero(int playerNumber){
         break;
 
     }
-        
-    if(choice == 1){
-        // Stinger newStringer;
-        Hero newHero;
-        return newHero;        
-    }
 
+    if(choice == 1){
+
+        return "Stinger";
+
+    }
+    else if(choice == 2){
+
+        return "Dart";
+
+    }
 }
 
 int main(){
 
+    // string name = chooseHero();
 
-    // while(!isGameOver){
+    Stinger player1;
+    Dart player2;
 
-
-
-    // }        
+    cout << player1.getName() << endl;
+    cout << player2.getName() << endl;
 
     return 0;
 
