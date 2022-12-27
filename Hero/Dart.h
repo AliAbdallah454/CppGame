@@ -13,9 +13,13 @@ public:
     Dart();
     void doubleDamage(Hero enemy);
 
+
     ~Dart();
 
+    double doubleDamageManaCost = 45;
+
 private:
+    
 
 };
 
