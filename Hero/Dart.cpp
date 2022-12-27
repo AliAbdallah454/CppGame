@@ -18,6 +18,19 @@ void Dart::doubleDamage(Hero enemy){
     
     if(getMana() >= Dart::doubleDamageManaCost){
         enemy.decreaseHealth(2*Dart::getDamage());
+        Dart::decreaseMana(doubleDamageManaCost);
+    }
+    else{
+        cout << "not enough mana" <<endl;
+    }
+}
+
+void Dart::takeDamage(Hero enemy){
+    
+    if(getMana() >= Dart::takeDamageManaCost){
+        Dart::decreaseHealth(takeDamageHealthCost * getHealth());
+        Dart::setDamage(0.65 * enemy.getDamage());
+        Dart::decreaseMana(takeDamageManaCost);
     }
     else{
         cout << "not enough mana" <<endl;

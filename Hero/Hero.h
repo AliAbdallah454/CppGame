@@ -26,6 +26,8 @@ public:
 
 
     void decreaseHealth(double amountTaken);
+    void decreaseMana(double amountUsed);
+    
     bool isDead();
     
     ~Hero();
