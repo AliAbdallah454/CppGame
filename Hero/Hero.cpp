@@ -43,7 +43,18 @@ double Hero::getResistance(){
 
 
 void Hero::decreaseHealth(double amountTaken){
-    setHealth(getHealth() - amountTaken);
+    setHealth(getHealth() - ((1 - getResistance()) * amountTaken));
+}
+
+void Hero::decreaseMana(double amountUsed){
+    setMana(getMana() - amountUsed);
+}
+
+bool Hero::isDead(){
+    if(getHealth() <= 0){
+        return true;
+    }
+    return false;
 }
 
 Hero::~Hero(){
