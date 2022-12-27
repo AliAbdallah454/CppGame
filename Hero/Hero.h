@@ -16,6 +16,7 @@ public:
     void setHealth(double health);
     void setMana(double mana);
     void setResistance(double resistance);
+    
 
     string getName();
     double getDamage();
@@ -23,6 +24,9 @@ public:
     double getMana();
     double getResistance();
 
+
+    void decreaseHealth(double amountTaken);
+    
     ~Hero();
 
 private:

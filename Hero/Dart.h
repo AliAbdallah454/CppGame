@@ -11,6 +11,8 @@ class Dart : Hero{
 public:
 
     Dart();
+    void doubleDamage(Hero enemy);
+
     ~Dart();
 
 private:
