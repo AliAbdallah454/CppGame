@@ -46,6 +46,13 @@ void Hero::decreaseHealth(double amountTaken){
     setHealth(getHealth() - amountTaken);
 }
 
+bool Hero::isDead(){
+    if(getHealth() <= 0){
+        return true;
+    }
+    return false;
+}
+
 Hero::~Hero(){
 
 }
