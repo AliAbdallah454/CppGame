@@ -1,1 +1,0 @@
-nikti mahdomi plz
