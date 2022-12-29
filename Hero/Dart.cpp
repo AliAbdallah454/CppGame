@@ -14,10 +14,10 @@ Dart::Dart(){
 }
  
 
-void Dart::doubleDamage(Hero *enemy){
+void Dart::doubleDamage(Hero &enemy){
     
     if(getMana() >= Dart::doubleDamageManaCost){
-        enemy->decreaseHealth(2 * Dart::getDamage());
+        enemy.decreaseHealth(2 * Dart::getDamage());
         Dart::decreaseMana(doubleDamageManaCost);
     }
     else{
@@ -25,7 +25,7 @@ void Dart::doubleDamage(Hero *enemy){
     }
 }
 
-void Dart::takeDamage(Hero enemy){
+void Dart::takeDamage(Hero &enemy){
     
     if(getMana() >= Dart::takeDamageManaCost){
         Dart::decreaseHealth(takeDamageHealthCost * getHealth());

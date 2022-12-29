@@ -10,7 +10,7 @@ public:
 
     Stinger();
     void blockDamage();
-    void critSteal(Hero enemy);
+    void critSteal(Hero &enemy);
 
     ~Stinger();
 

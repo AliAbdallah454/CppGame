@@ -23,7 +23,6 @@ public:
     double getMana();
     double getResistance();
 
-
     void decreaseHealth(double amountTaken);
     void decreaseMana(double amountUsed);
     

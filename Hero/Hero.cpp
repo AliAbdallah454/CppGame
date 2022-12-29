@@ -41,6 +41,7 @@ double Hero::getResistance(){
     return this->resistance;
 }
 
+//end
 
 void Hero::decreaseHealth(double amountTaken){
     setHealth(getHealth() - ((1 - getResistance()) * amountTaken));

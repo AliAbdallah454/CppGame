@@ -86,19 +86,19 @@ int main(){
 
     // string name = chooseHero();
 
-    Stinger *player1 = new Stinger;
-    Dart *player2 = new Dart;
+    Stinger player1;
+    Dart player2;
 
-    cout << player1->getName() << endl;
-    cout << player2->getName() << endl;
+    cout << player1.getName() << endl;
+    cout << player2.getName() << endl;
 
-    cout << player1->getHealth() << endl;
+    cout << player1.getHealth() << endl;
 
-    player2->doubleDamage(player1);
+    player2.doubleDamage(player1);
 
     cout << "Stinger's Health after the attack : \n";
 
-    cout << player1->getHealth() << endl;
+    cout << player1.getHealth() << endl;
 
     return 0;
 

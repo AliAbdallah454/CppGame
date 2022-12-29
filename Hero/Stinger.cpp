@@ -11,8 +11,6 @@ using std::time;
 using std::rand;
 using std::srand;
 
-
-
 Stinger::Stinger(){
 
     setName("Stinger");
@@ -33,7 +31,7 @@ void Stinger::blockDamage(){
     }
 }
 
-void Stinger::critSteal(Hero enemy){
+void Stinger::critSteal(Hero &enemy){
 
     srand(time(nullptr));
     bool randomBoolean = rand() < RAND_MAX * 0.25;
@@ -43,8 +41,6 @@ void Stinger::critSteal(Hero enemy){
         Stinger::setHealth(Stinger::getHealth() + enemy.getHealth() * critStealHeal);
     }
 }
-
-
 
 Stinger::~Stinger(){
 
